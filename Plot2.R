@@ -4,7 +4,6 @@ powerconsumption <- as.data.table(read.csv2("C:/Users/tblo/OneDrive - Gemeente '
 
 options(scipen = 999)
 
-powerconsumption[, date := as.Date(Date)]
 
 temp <- powerconsumption[Date %in% c("1/2/2007", "2/2/2007")]
 
